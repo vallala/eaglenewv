@@ -14,6 +14,8 @@
             <th>Purchase price</th>
             <th>Purchase Date</th>
             <th>Original value</th>
+            <th>Current Price</th>
+            <th>Current Value</th>
             <th colspan="3">Actions</th>
         </tr>
         </thead>
@@ -28,6 +30,8 @@
                 <td>{{ $stock->purchase_price }}</td>
                 <td>{{ $stock->purchased }}</td>
                 <td><?php echo ($stock['shares']*$stock['purchase_price']); ?></td>
+                <td>{{ $stock->current_price }}</td>
+                <td><?php echo ($stock['shares']*$stock['current_price']); ?></td>
                 <td><a href="{{url('stocks',$stock->id)}}" class="btn btn-primary">Read</a></td>
                 <td><a href="{{route('stocks.edit',$stock->id)}}" class="btn btn-warning">Update</a></td>
                 <td>

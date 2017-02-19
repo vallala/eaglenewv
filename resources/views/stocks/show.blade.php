@@ -29,6 +29,14 @@
                 <td>Original value</td>
                 <td><?php echo ($stock['shares']*$stock['purchase_price']); ?></td>
             </tr>
+            <tr>
+                <td>Current Price</td>
+                <td><?php echo ($stock['current_price']); ?></td>
+            </tr>
+            <tr>
+                <td>Current value</td>
+                <td><?php echo ($stock['shares']*$stock['current_price']); ?></td>
+            </tr>
             </tbody>
         </table>
     </div>

@@ -28,6 +28,12 @@ class Customer extends Model
         return $this->hasMany('App\Investment');
 
     }
+	
+	public function assets()
+	{
+		return $this->hasMany('App\Asset');
+	}
+	
 
 
 }

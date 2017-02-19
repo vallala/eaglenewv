@@ -27,7 +27,7 @@
             </tr>
 			<tr>
                 <td>Recent Date</td>
-                <td><?php echo ($investment['recent_Date']); ?></td>
+                <td><?php echo ($investment['recent_date']); ?></td>
             </tr>
             </tbody>
         </table>

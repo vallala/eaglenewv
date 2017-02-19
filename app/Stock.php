@@ -14,6 +14,7 @@ class Stock extends Model
         'shares',
         'purchase_price',
         'purchased',
+		'current_price',
 
     ];
     

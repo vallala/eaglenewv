@@ -22,6 +22,10 @@
         {!! Form::label('purchased', 'Purchase Date:') !!}
         {!! Form::text('purchased',null,['class'=>'form-control']) !!}
     </div>
+    <div class="form-group">
+        {!! Form::label('current_price', 'Recent Price:') !!}
+        {!! Form::text('current_price',null,['class'=>'form-control']) !!}
+    </div>
 
     <div class="form-group">
         {!! Form::submit('Update', ['class' => 'btn btn-primary']) !!}
